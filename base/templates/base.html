@@ -1,0 +1,17 @@
+
+<h1>hello</h1>
+{% for cap in cap  reversed %}
+<h3>{{cap.title}}  -{{cap.created_on|timesince}} ago</h3> 
+<img src="{{cap.image.url}}">
+<span>{{cap.content|truncatewords:20}}</span> 
+<a href="{{cap.get_absolute_url}}"><button>read more</button> </a>
+
+{% endfor %}
+
+  
+<style>
+    img{
+        height: 100px;
+        width: 300px;
+    }
+</style>

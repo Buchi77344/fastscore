@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href ="{% static 'css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class = "wrapper">
+        <nav>
+            <div class = "container">
+                <div class = "navigation">
+                    <div class = "hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                   <a href = "#"><span class = "logo">SportsHub<span/></a> 
+                </div>
+
+                <div class = "menu-icons-container">
+                    <a href = "#" class = "menu-icon">
+                        <img src = "{% static 'images/football-icon.svg '%}" alt = "">
+                        <p>Scores</p>
+                    </a>
+
+                    <a href = "#" class = "menu-icon">
+                        <img src = "{% static 'images/favorite-icon.svg '%}" alt = "">
+                        <p>Favorites</p>
+                    </a>
+
+                    <a href = "#" class = "menu-icon">
+                        <img src = "{% static 'images/news-icon.svg' %}" alt = "">
+                        <p>News</p>
+                    </a>
+
+                    <a href = "#" class = "menu-icon">
+                        <img src = "{% static 'images/download-icon.svg' %}" alt = "">
+                        <p>Get the app</p>
+                    </a>
+
+                    <a href = "#" class = "bet">
+                        <span class = "logo">SportsHub</span>
+                        <span class = "logo">Bet</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <header>
+            <div class = "container"></div>
+        </header>
+        <main>
+            <div class = "container"></div>
+        </main>
+
+        <footer>
+            <div class = "container"></div>
+        </footer>
+    </div>
+</body>
+</html>
